@@ -8,7 +8,7 @@ export default class AnatomyExample extends Component {
   }
 
   getData() {
-    fetch('http://api.coronatracker.com/news/trending?limit=20&country=Malaysia&countryCode=MY')
+    fetch('https://api.coronatracker.com/news/trending?limit=20&country=Malaysia&countryCode=MY')
     .then((response) => response.json())
     .then(json => {
         this.setState({ data: json.items });
